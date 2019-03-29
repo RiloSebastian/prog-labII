@@ -1,0 +1,10 @@
+1 - new es una palabra reservada cuyo unico proposito es adquirir memoria sin inicializar. lo que hace un constructor es
+    inicializar esa memoria con unos valores que pueden ser por defecto o personalizados dependiendo del tipo de constructor 
+    que se utilice.
+
+2 - se llama constructor por defecto a un constructor privado que no recibe ningun tipo de argumentos ni devuelve ningun
+    valor. lo que hace es inicializar todos los campos de una clase a 0, false o null.
+
+3 - si no se declara un constructor en la clase, los campos de el nuevo objeto no quedarian inicializados. lo que podria causar problemas.
+
+4 - primero se inicializa un constructor estatico
