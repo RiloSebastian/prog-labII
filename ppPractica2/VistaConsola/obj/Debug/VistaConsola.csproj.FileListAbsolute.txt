@@ -1,0 +1,10 @@
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\obj\Debug\VistaConsola.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\obj\Debug\VistaConsola.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\bin\Debug\VistaConsola.exe.config
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\bin\Debug\VistaConsola.exe
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\bin\Debug\VistaConsola.pdb
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\bin\Debug\Entidades.dll
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\bin\Debug\Entidades.pdb
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\obj\Debug\VistaConsola.csproj.CopyComplete
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\obj\Debug\VistaConsola.exe
+C:\Users\sebas\source\repos\ppPractica2\VistaConsola\obj\Debug\VistaConsola.pdb

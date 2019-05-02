@@ -1,0 +1,6 @@
+C:\Users\sebas\source\repos\ppPractica2\Entidades\bin\Debug\Entidades.dll
+C:\Users\sebas\source\repos\ppPractica2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sebas\source\repos\ppPractica2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\ppPractica2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\ppPractica2\Entidades\obj\Debug\Entidades.dll
+C:\Users\sebas\source\repos\ppPractica2\Entidades\obj\Debug\Entidades.pdb
