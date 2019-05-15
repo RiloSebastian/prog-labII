@@ -1,0 +1,13 @@
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\bin\Debug\VentasForm.exe.config
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\bin\Debug\VentasForm.exe
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\bin\Debug\VentasForm.pdb
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\FormVentas.csprojAssemblyReference.cache
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\VentasForm.formVentas.resources
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\VentasForm.Properties.Resources.resources
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\FormVentas.csproj.GenerateResource.cache
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\FormVentas.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\VentasForm.exe
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\VentasForm.pdb
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\bin\Debug\ComiqueriaLogic.dll
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\bin\Debug\ComiqueriaLogic.pdb
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\VentasForm\obj\Debug\FormVentas.csproj.CopyComplete

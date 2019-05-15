@@ -1,0 +1,6 @@
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\ComiqueriaLogic\bin\Debug\ComiqueriaLogic.dll
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\ComiqueriaLogic\bin\Debug\ComiqueriaLogic.pdb
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\ComiqueriaLogic\obj\Debug\ComiqueriaLogic.csprojAssemblyReference.cache
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\ComiqueriaLogic\obj\Debug\ComiqueriaLogic.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\ComiqueriaLogic\obj\Debug\ComiqueriaLogic.dll
+C:\Users\sebas\Desktop\prog-labII\SebastianRilo2C.zip\ComiqueriaApp\ComiqueriaLogic\obj\Debug\ComiqueriaLogic.pdb
