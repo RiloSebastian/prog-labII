@@ -1,0 +1,9 @@
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\bin\Debug\Excepciones.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\bin\Debug\Excepciones.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\obj\Debug\EntidadesAbstractas.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\obj\Debug\EntidadesAbstractas.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\obj\Debug\EntidadesAbstractas.csproj.CopyComplete
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Entidades\obj\Debug\Entidades.pdb

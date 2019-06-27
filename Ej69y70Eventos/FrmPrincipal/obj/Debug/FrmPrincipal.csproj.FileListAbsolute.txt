@@ -1,0 +1,12 @@
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\bin\Debug\FrmPrincipal.exe.config
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\bin\Debug\FrmPrincipal.exe
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\bin\Debug\FrmPrincipal.pdb
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.PrincipalFrm.resources
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.Properties.Resources.resources
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.TestDelegadosFrm.resources
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.csproj.GenerateResource.cache
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.exe
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.pdb
+C:\Users\sebas\source\repos\Ej69y70Eventos\FrmPrincipal\obj\Debug\FrmPrincipal.MostrarFrm.resources

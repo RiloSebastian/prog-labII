@@ -1,0 +1,67 @@
+public bool ValidarArchivo(string ruta)
+{
+	try
+	{
+		if (File.Exists(ruta))
+		{
+			if (Path.GetExtension(ruta) == ".dat")
+				return true;
+			else
+				throw new Exception("El archivo no es .dat");
+		}
+	}
+	catch (Exception e)
+	{
+		throw new ArchivoIncorrectoException("El archivo no es correcto", e);
+	}
+	return true;
+}
+
+public bool Guardar(string ruta, T datos)
+{
+	FileStream fs = null;
+	BinaryFormatter ser = null;
+	try
+	{
+		fs = new FileStream(ruta, FileMode.Create);
+		ser = new BinaryFormatter();
+		ser.Serialize(fs, datos);
+	}
+	catch (Exception e)
+	{
+		throw e;
+	}
+	finally
+	{
+		if(fs != null)
+		{
+			fs.Close();
+		}
+	}
+	return true;
+}
+
+public T Leer(string ruta)
+{
+	T datos;
+	FileStream fs = null;
+	BinaryFormatter ser = null;
+	try
+	{
+		fs = new FileStream(ruta, FileMode.Open);
+		ser = new BinaryFormatter();
+		datos = (T)ser.Deserialize(fs);
+	}
+	catch (Exception e)
+	{
+		throw e;
+	}
+	finally
+	{
+		if(fs != null)
+		{
+			fs.Close();
+		}
+	}
+	return datos;
+}

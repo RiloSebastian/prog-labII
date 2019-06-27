@@ -1,0 +1,50 @@
+para usar Excepciones usar
+try
+{
+  //escribir codigo que sabemos que puede ocacionar una excepcion del sistema
+  // por ejemplo dividimos 2 numeros sabiendo que si dividimos por 0 causamos 
+  // una excepcion
+}
+catch("el nombre de la excepcion que sabemos puede aparecer" e("objeto de la Exc"))
+{
+  // en caso de que si ocurra la excepcion aca se va a escribir el codigo que se va a
+  // realizar para que el programa no cierre
+}
+// podemos terminarlo aca pero si sabemos que, ocurra o no la excepcion, vamos a 
+// realizar otra accion escribimos
+finally
+{
+ //el codigo que nesecitamos se realice si o si.
+}
+
+------------------------------------------------------------------------------------------------------------------------
+para crear Excepciones propias es mejor crear un nuevo proyecto de biblioteca de clases llamado Excepciones.csproj 
+se creara una clase por cada excepcion propia. todas estas heredaran de la clase Exception.cs y tendran solo constructores que recibiran o no otra excepcion como parametros o un mensaje. con ":base" reutilizaremos el constructor de Exception sin nesecidad de escribir nuevo codigo de mensaje. se pueden sobrecargar.
+
+namespace Excepciones
+{
+    public class ArchivosException : Exception // siempre publicas
+    {
+        public ArchivosException(Exception innerException) // siempre publicas
+        : base("hubo un problema con el archivo.", innerException)
+        { }
+    }
+}
+
+
+para implementarlas usaremos la palabra clave throw. es util para reemplazar un return si no se pudo implementar un metodo. o simplemente si ocurre un error que el sistema no identifica como tal. 
+
+ejemplo:
+
+ public static Universidad operator +(Universidad u, Alumno a)
+        {
+            if (u != a)
+            {
+                u.Alumnos.Add(a);
+                return u;
+            }
+            throw new AlumnoRepetidoException();// si el alumno se repite y no se puede
+                                                                               // agregar, se lanza una excepcion y 
+				               //evitamos que se corte el programa
+
+        }

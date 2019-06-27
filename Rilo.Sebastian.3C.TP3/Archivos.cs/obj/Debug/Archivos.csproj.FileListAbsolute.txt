@@ -1,0 +1,8 @@
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\bin\Debug\Archivos.cs.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\bin\Debug\Archivos.cs.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\bin\Debug\Excepciones.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\bin\Debug\Excepciones.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\obj\Debug\Archivos.cs.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\Archivos.cs\obj\Debug\Archivos.cs.pdb

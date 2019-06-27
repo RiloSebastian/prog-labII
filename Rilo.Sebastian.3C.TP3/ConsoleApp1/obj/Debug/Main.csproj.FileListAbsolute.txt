@@ -1,0 +1,16 @@
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\Archivos.cs.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\ClasesInstanciables.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\Entidades.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\Excepciones.dll
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\Archivos.cs.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\ClasesInstanciables.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\Entidades.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\bin\Debug\Excepciones.pdb
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\obj\Debug\Main.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\obj\Debug\Main.csproj.CopyComplete
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\sebas\source\repos\Rilo.Sebastian.3C.TP3\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

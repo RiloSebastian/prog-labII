@@ -1,0 +1,84 @@
+los genericos son clases con atributos que pueden ser cualquier tipo de dato. 
+estos datos se definen en la implementacion del objeto y permiten ahorrar mucho 
+tiempo en lo que a codigo respecta. los ejemplos mas conocidos de clases genericas 
+son las colecciones( list, Queue, Stack, Dictionary). objetos con metodos que se 
+pueden realizar sin importar el tipo de dato que tenga el objeto como atributo.
+
+list<"tipo de dato"> lista; // la clase lista tiene el espacio del dato como algo generico.
+
+dictionary<"tipodato1","tipodato2"> aux;//un diccionario tiene 2 parametros.
+
+cuando se crea una clase generica se tienen que especificar la cantidad de datos 
+genericos usando letras mayusculas ( 'T' es la mas comun) y en caso de ser mas de
+uno separarlos con coma ( , ) todos los parametros dento de <>. 
+luego se los tomara como atributos que se utilizaran en los metodos definidos dentro
+de la clase generica.
+
+ejemplo:
+//en la clase
+public class Mensajero<T, U>
+{
+    private T miAtr1;
+    private U miAtr2;
+    private Dictionary<T, U> miDiccionario;
+}
+
+// al instanciar.
+Mensaje<string, int> tipoTexto = new Mensaje<string, int>();
+Mensaje<char, MiClase> tipoMio = new Mensaje<char, MiClase>();
+
+---------------------------------------------------------------------------------------------------------------------
+
+se pueden aplicar restricciones a los parametros genericos para evitar posibles errores. se aplican con la palabra clave "where" el nombre del argumento y ':'.
+las restricciones son:
+where T: struct ==> el argumento debe ser un tipo de valor
+
+where T: class ==> el argumento debe ser un tipo de valor
+
+where T: unmanaged ==> el arg no debe ser de referencia ni tiene que contener uno
+			en ningun nivel de anidamiento
+
+where T: new() ==> el arg debe tener un constructor publico sin parametros. si esta
+		junto con otras reestricciones debe estar en ultimo lugar.
+
+where T: "nombre de clase base" ==> el tipo debe ser o derivar de la clase base
+				especificada
+
+where T: "nombre de interfaz"==> el tipo debe ser o implementar una interfaz 
+			         especificada. pueden especificarse varias 
+			         restricciones de interfaz y esta tambien puede ser
+			         generica.
+
+where T: U==> el argumento proporcionado por T debe ser o derivar del
+	        proporcionado por U
+
+
+public class Mensajero<T> where T : Mensaje
+{ }
+class EjemploComplejo<K, V, U>
+    // Implemente interfaz
+    where U : System.IComparable<U>
+    // V tenga constructor por defecto
+    where V : new()
+{ }
+
+
+Algunas de estas restricciones son mutuamente excluyentes.
+Todos los tipos de valor deben tener un constructor sin parámetros accesible.
+La restricción struct implica la restricción new() y la restricción new() no se puede combinar con la restricción struct.
+La restricción unmanaged implica la restricción struct.
+La restricción unmanaged no se puede combinar con las restricciones struct o new().
+
+Para que un método sea genérico, no hace falta que la clase también lo sea:
+class Prueba
+{
+    public static void OpTest<T>(T s, T t) where T : class
+    {
+        System.Console.WriteLine(s == t);
+    }
+
+    public void OpTest2<T>(T s, T t) where T : class
+    {
+        System.Console.WriteLine(s == t);
+    }
+}

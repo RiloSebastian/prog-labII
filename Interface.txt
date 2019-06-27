@@ -1,0 +1,77 @@
+las interfaces son clases (pueden ser genericas) con unicamente metodos y propiedades publicas y abstractas.
+Es un contrato que establece una clase en el cual esta clase asegura que implementará un conjunto de métodos. 
+Son una manera de describir qué debería hacer una clase sin especificar el cómo. 
+Es la descripción de uno o más métodos que posteriormente alguna clase puede implementar.
+
+C# no permite especificar atributos en las interfaces.
+Todos los métodos son públicos (no se permite especificarlo).
+Todos los métodos son como “abstractos” ya que no cuentan con implementación (no se permite especificarlo).
+Se pueden especificar propiedades (sin implementación).
+
+public interface IArchivo<T>//se usa la palabra reservada interface
+    {
+        bool Leer(string archivo, out T datos);//metodo
+        bool Guardar(string archivo, T datos);//metodo
+        T Numero { get; set; }//propiedad
+    }
+
+Las clases pueden implementar varias interfaces. (separadas por ',')
+Las interfaces pueden “simular” algo parecido a la herencia múltiple.
+
+Para que una clase implemente una interface se emplea el operador dos puntos (:).
+Para implementar una interface a una clase derivada, primero hay que indicar la clase
+base, luego la interface separadas por una coma (,).
+Para sobrescribir los miembros de las interfaces NO se emplea la palabra override, ya 
+que no fueron declaradas como virtual o abstract en la interface.
+
+[modificadores] class NombreClase : INombreInterface
+{
+    //Miembros de la interface
+}
+
+[modificadores] class NombreClase : IMiInterface1, IMiInterface2
+{ }
+
+------------------------------------------------------------------------------------------------------------------------
+
+Los miembros implementados explícitamente sirven para ocultar la implementación de miembros de interfaces a las clases que lo implementan.
+También sirve para evitar la ambigüedad cuando, por ejemplo, una clase implementa dos interfaces las cuales poseen un miembro con la misma firma.
+Las clases derivadas de clases que implementan interfaces de manera explícita no pueden sobrescribir los métodos definidos explícitamente.
+Sintácticamente la implementación de una interfaz de manera explícita e implícita es igual, lo único que cambia es la firma del miembro en la clase que implementa la interfaz.
+----------------------------------------------------
+interfaz explicita:
+
+void INombreInterface.NombreMetodo()
+{
+    Console.WriteLine("Hola");
+}
+Se coloca el nombre de la interfaz adelante del nombre del método que se esta implementando explícitamente y además no se le indica la visibilidad.
+--------------------------------------------------
+interfaz implicita:
+
+public interface IMiInterfaz
+{
+    string MiMetodo();
+}
+
+public class PruebaInterfazImplicita : IMiInterfaz
+{
+    string IMiInterfaz.MiMetodo()
+    {
+        return "Hola";
+    }
+}
+
+public static void Main()
+{
+    PruebaInterfazImplicita obj = new PruebaInterfazImplicita();
+
+    // Produce un error de compilación de que la clase
+    //no contiene ese método
+    //obj.MiMetodo();
+
+    // Debemos castear el objeto
+    string str = ((IMiInterfaz)obj).MiMetodo();
+    Console.WriteLine(str);
+    Console.ReadKey();
+}

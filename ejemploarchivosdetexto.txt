@@ -1,0 +1,48 @@
+public bool Guardar(string archivo, T datos)
+{
+	StreamWriter writer = null;
+	try
+	{
+		writer = new StreamWriter(archivo, false);
+		writer.WriteLine(datos.ToString());
+	}
+	catch (Exception e)
+	{
+		throw e;
+	}
+	finally
+	{
+		if (writer != null)
+		{
+			writer.Close();
+		}
+	}
+	return true;
+}
+
+public bool Leer(string archivo, out T datos)
+{
+	StreamReader reader = null;
+	try
+	{
+		reader = new StreamReader(archivo);
+		//while (!reader.EndOfStream)
+		//{
+			string asdf = reader.ReadLine(); //TODO
+			string asdfg = reader.ReadToEnd(); //TODO
+			//TODO hacer lo que sea con datos
+		//}
+	}
+	catch (Exception e)
+	{
+		throw e;
+	}
+	finally
+	{
+		if (reader != null)
+		{
+			reader.Close();
+		}
+	}
+	return true;
+}

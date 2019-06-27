@@ -1,0 +1,175 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ejercicio_Nro_61
+{
+    public static class PeopleDAO
+    {
+        public static SqlConnection conexion;
+        public static SqlCommand comando;
+
+        static PeopleDAO()
+        {
+            string connectionStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=Persona; Integrated Security = True";
+
+            try
+            {
+                conexion = new SqlConnection(connectionStr);
+                comando = new SqlCommand();
+                comando.CommandType = CommandType.Text;
+                comando.Connection = conexion;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public static bool Guardar(string nombre, string apellido)
+        {
+            bool respuesta = false;
+
+            try
+            {
+                string consulta = String.Format("INSERT INTO People (nombre, apellido) VALUES ('{0}','{1}')", nombre, apellido);
+                comando.CommandText = consulta;
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                respuesta = true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+            return respuesta;
+        }
+
+        public static List<People> Leer()
+        {
+            List<People> peoples = new List<People>();
+            People people;
+
+            string consulta = String.Format("Select * from people ORDER BY ID DESC");
+            try
+            {
+                comando.CommandText = consulta;
+                conexion.Open();
+                SqlDataReader oDr = comando.ExecuteReader();
+
+                while (oDr.Read())
+                {
+                    int id = int.Parse(oDr["id"].ToString());
+                    string nombre = oDr["nombre"].ToString();
+                    string apellido = oDr["apellido"].ToString();
+                    people = new People(id, nombre, apellido);
+                    peoples.Add(people);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+
+            return peoples;
+        }
+
+        public static People LeerPorID(int id)
+        {
+            People people = null;
+
+            string consulta = String.Format("Select * from people where id={0}", id);
+            try
+            {
+                comando.CommandText = consulta;
+                conexion.Open();
+                SqlDataReader oDr = comando.ExecuteReader();
+
+                if(oDr.Read())
+                {
+                    int idAux = int.Parse(oDr["id"].ToString());
+                    string nombre = oDr["nombre"].ToString();
+                    string apellido = oDr["apellido"].ToString();
+                    people = new People(idAux, nombre, apellido);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+
+            return people;
+        }
+
+        public static bool Modificar(People people)
+        {
+            bool respuesta = false;
+            try
+            {
+                string consulta = String.Format("Update people set nombre='{0}', apellido='{1}' where id={2}", 
+                    people.Nombre, people.Apellido, people.Id);
+                comando.CommandText = consulta;
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                respuesta = true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+
+            return respuesta;
+        }
+
+        public static bool Borrar(int id)
+        {
+            bool respuesta = false;
+
+            try
+            {
+                string consulta = String.Format("DELETE FROM People WHERE id={0}", id);
+                comando.CommandText = consulta;
+                conexion.Open();
+                comando.ExecuteNonQuery();
+                respuesta = true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+            return respuesta;
+        }
+    }
+}
